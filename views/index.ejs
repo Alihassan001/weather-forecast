@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Temperature by city name</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+            <h1>ENTER CITY NAME</h1>
+            <form class="pure-form" action="/" method="post">
+                <fieldset>
+                    <input id="fld" type="text" name="city" placeholder="Enter a City" autofocus required>
+                    <input id="btn" type="submit" class="pure-button pure-button-primary" value="Go">
+
+                    <% if(weather !== null){ %>
+                        <p><%= weather %></p>
+                      <% } %>
+              
+                      <% if(error !== null){ %>
+                        <p><%= error %></p>
+                      <% } %>
+
+
+                </fieldset>
+            </form>
+            
+    </body>
+</html>
